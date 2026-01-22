@@ -29,6 +29,11 @@
         var counter1 = 0;
         var counter2 = 0;
         var counter3 = 0;
+        var counter4 = 0;
+        var counter5 = 0;
+        var counter6 = 0;
+        var counter7 = 0;
+        var counter8 = 0;
 
         function myFunction() {
             initialize();
@@ -96,21 +101,29 @@
                     case '1': counter1++; break;
                     case '2': counter2++; break;
                     case '3': counter3++; break;
-
-                    case '4': counter1--; break;
-                    case '5': counter2--; break;
-                    case '6': counter3--; break;
-
-                    case '7': counter1 = 0; break;
-                    case '8': counter2 = 0; break;
-                    case '9': counter3 = 0; break;
+                    case '4': counter4++; break;
+                    case '5': counter5++; break;
+                    case '6': counter6++; break;
+                    case '7': counter7++; break;
+                    case '8': counter8++; break;
+                    case '9': counter9++; break;
+                    
+                    case 'q': counter1--; break;
+                    case 'w': counter2--; break;
+                    case 'e': counter3--; break;
+                    case 'r': counter4--; break;
+                    case 't': counter5--; break;
+                    case 'y': counter6--; break;
+                    case 'u': counter7--; break;
+                    case 'i': counter8--; break;
+                    case 'o': counter9++; break;
                 }
 
                 $("#counter1").html("Counter 1: " + counter1);
                 $("#counter2").html("Counter 2: " + counter2);
                 $("#counter3").html("Counter 3: " + counter3);
 
-                $("#aside11").html(counter1 + ", " + counter2 + ", " + counter3);
+                $("#aside11").html(counter1 + ", " + counter2 + ", " + counter3 + ", "+ counter4 + ", "+ counter5 + ", "+ counter6 + ", "+ counter7 + ", "+ counter8 + ", "+ counter9 + ".");
             });
         }
 
@@ -448,9 +461,15 @@
 
     <div class="main">
         <article class="article">
-            <section class="section" id="counter1">Section 1</section>
-            <section class="section" id="counter2">Section 2</section>
-            <section class="section" id="counter3">Section 3</section>
+            <section class="section" id="counter1">Contador 1</section>
+            <section class="section" id="counter2">Contador 2</section>
+            <section class="section" id="counter3">Contador 3</section>
+            <section class="section" id="counter4">Contador 4</section>
+            <section class="section" id="counter5">Contador 5</section>
+            <section class="section" id="counter6">Contador 6</section>
+            <section class="section" id="counter7">Contador 7</section>
+            <section class="section" id="counter8">Contador 8</section>
+            <section class="section" id="counter9">Contador 9</section>
         </article>
 
         <aside class="aside" id="aside1"><h1 id="aside11" style="font-size: 4em;">  </h1></aside>
